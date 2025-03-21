@@ -9,9 +9,9 @@ Be sure to implement all the PIOT-CDA-* issues (requirements).
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
-
+Mi implementacion aumenta SystemPerformanceManager para monitorear el uso de CPU y memoria, cree clases específicas para recopilar estas métricas, que luego se utilizan en handleTelemetry. También se añade registro en startManager y stopManager.
 How does your implementation work?
-
+Se crea la clase base BaseSystemUtilTask, de la cual heredan SystemCpuUtilTask y SystemMemUtilTask para recopilar métricas de CPU y memoria. Sus datos se obtienen mediante getTelemetryValue en handleTelemetry
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
