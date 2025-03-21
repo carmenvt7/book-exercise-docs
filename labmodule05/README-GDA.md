@@ -9,8 +9,11 @@ Be sure to implement all the PIOT-GDA-* issues (requirements) listed.
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
+mejora la comunicación entre sensores y actuadores para garantizar la interacción entre CDA y GDA
 
 How does your implementation work?
+Implementé métodos en SensorData, ActuatorData, SystemPerformanceData y SystemStateData, incluyendo getters, setters y handleUpdateData. SystemPerformanceManager ahora recopila métricas de CPU, memoria y disco
+También hice que DataUtil permita convertir estos datos a JSON con Gson, facilitando la comunicación con CDA.
 
 ### Code Repository and Branch
 
