@@ -11,7 +11,7 @@ NOTE: Include two full paragraphs describing your implementation approach by ans
 What does your implementation do? 
 conecta el SenseHAT Emulator con los datos de sensores y actuadores, permitiendo observar cómo reacciona el dispositivo a cambios en temperatura, presión y humedad.
 How does your implementation work?
-los sensores de temperatura, presión y humedad heredan de BaseSensorSimTask y almacenan datos en SensorData. Los actuadores, como HumidifierEmulatorTask, HvacEmulatorTask y LedDisplayEmulatorTask, derivan de BaseActuatorSimTask y muestran activaciones en la pantalla LED del emulador. SensorAdapterManager permite cargar dinámicamente los emuladores o, si no están activos, usa _initEnvironmentalSensorTasks. Además, se han comentado líneas de código relacionadas con la pantalla para evitar errores con BufferFrame, ya que solo funcionarían en un dispositivo real.
+los sensores de temperatura, presión y humedad heredan de BaseSensorSimTask y almacenan datos en SensorData. Los actuadores, como HumidifierEmulatorTask, HvacEmulatorTask y LedDisplayEmulatorTask, derivan de BaseActuatorSimTask y muestran activaciones en la pantalla LED del emulador. SensorAdapterManager permite cargar dinámicamente los emuladores o, si no están activos, usa _initEnvironmentalSensorTasks.
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
