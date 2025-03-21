@@ -9,9 +9,9 @@ Be sure to implement all the PIOT-GDA-* issues.
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
-
+monitorear el uso de recursos del sistema, como CPU y memoria, a través de la clase SystemPerformanceManager, que ahora puede gestionar estos datos correctamente.
 How does your implementation work?
-
+Se definen métodos en SystemPerformanceManager que invocan SystemCpuUtilTask y SystemMemUtilTask para recopilar métricas. Estas clases heredan de BaseSystemUtilTask, donde se establecen getters y setters. Además, se sobrescribe el método getTelemetryValue y se realizan ajustes en el Logger para evitar errores en las pruebas.
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
