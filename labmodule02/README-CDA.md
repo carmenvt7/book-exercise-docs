@@ -25,8 +25,8 @@ NOTE: The instructor will execute your unit tests. You only need to list each te
 since you need to ensure you haven't introduced regressions.
 
 - ConfigUtilTest
-- SystemCpuUtilTest
-- SystemMemUtilTest
+- SystemCpuUtilTaskTest
+- SystemMemUtilTaskTest
 
 ### Integration Tests Executed
 
