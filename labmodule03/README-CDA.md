@@ -9,9 +9,9 @@ Be sure to implement all the PIOT-CDA-* issues (requirements).
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
-
+simula el funcionamiento de distintos sensores y actuadores en un entorno IoT. Gestiona datos de sensores, actuadores y rendimiento del sistema a través de diferentes clases, permitiendo su correcta emulación y monitoreo.
 How does your implementation work?
-
+Cree clases para sensores de temperatura, humedad y presión, que heredan de BaseSensorSimTask, donde se define la lógica principal. Del mismo modo, los actuadores se gestionan mediante BaseActuatorSimTask. Los datos son administrados por DeviceDataManager, que se instancia en CDA. Además, se implementa JSONDataEncoder para garantizar el correcto funcionamiento de los unitests.
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
