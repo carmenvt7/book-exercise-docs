@@ -9,9 +9,10 @@ Be sure to implement all the PIOT-CDA-* issues (requirements).
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
+mejora la comunicación entre sensores y actuadores para garantizar la interacción entre CDA y GDA.
 
 How does your implementation work?
-
+Se actualiza SystemPerformanceManager para gestionar mejor la telemetría y la escucha de datos, permitiéndole procesar SystemPerformanceData y SystemPerformanceMessage. Además, se crean métodos en DataUtil para convertir ActuatorData, SensorData y SystemPerformanceData a formato JSON y viceversa. El JsonDataEncoder ya estaba configurado desde labmodule03 para garantizar la compatibilidad con los tests unitarios.
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
