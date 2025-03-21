@@ -9,9 +9,9 @@ Be sure to implement all the PIOT-GDA-* issues (requirements).
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
-
+No hay implementación en esta práctica
 How does your implementation work?
-
+Los tests funcionan bien
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
