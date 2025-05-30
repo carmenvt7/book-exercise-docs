@@ -8,15 +8,17 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed.
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+What does your implementation do? Establece la conexión con el broker MQTT y gestiona la suscripción y publicación de datos.
+Esto permite al dispositivo interactuar con el sistema a través de MQTT.
 
-How does your implementation work?
+How does your implementation work?DeviceDataManager utiliza MqttClientConnector para iniciar, suscribirse y gestionar los mensajes.
+La clase MqttClientConnector maneja toda la comunicación MQTT con el broker.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: https://github.com/carmenvt7/python-components/tree/labmodule06
 
 
 ### Unit Tests Executed
@@ -36,8 +38,8 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
-- 
+- MqttClientConnectorTest
+- MqttClientControlPacketTest
 - 
 
 EOF.
