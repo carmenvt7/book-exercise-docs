@@ -8,15 +8,17 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed.
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+What does your implementation do? Añade soporte para la recepción y procesamiento de comandos ActuatorData en la CDA, así como para enviar datos de vuelta al GDA.
+También añade encriptación TLS para la conexión MQTT mediante la función tls_set y un archivo de certificado.
 
-How does your implementation work?
+How does your implementation work?Se integra en el DeviceDataManager y MqttClientConnector, que configuran la conexión segura y procesan comandos y datos.
+Se emplean tls_set y un archivo de certificado para la autenticación y el cifrado de las comunicaciones.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: https://github.com/carmenvt7/python-components/tree/labmodule10
 
 
 ### Unit Tests Executed
@@ -36,8 +38,9 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
-- 
-- 
+- MqttClientConnectorTest
+- DeviceDataManagerIntegrationTest
+- DeviceDataManagerWithCommsTest
+- DeviceDataManagerWithMqttClientOnly
 
 EOF.
